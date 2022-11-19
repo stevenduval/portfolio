@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+   .MuiContainer-root h1 {
+        font-size: 17vw;
+    }
+}
+
+.MuiBox-root {
+    background: rgba(0,0,84, 0.99);
+    background-image: url(../images/bg.gif);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: top;
+}
+
+.MuiContainer-root a.link {
+    font-family: "PT Sans Narrow", serif;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    text-decoration: none;
+    min-width: 64px;
+    padding: 6px 16px;
+    width: 33%;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.MuiContainer-root a.link + a.link::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: default;
+}
+
+.MuiContainer-root a.link:hover {
+   color: #FCEFDE;
+    cursor: pointer;
+}
