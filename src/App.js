@@ -11,13 +11,33 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Home } from './Components/Home/Home';
-import { Portfolio } from "./Components/Portfolio/Portfolio";
+import { Projects } from "./Components/Projects/Projects";
 import { Nav } from "./Components/Nav/Nav";
 
 const theme = createTheme({
     palette: {
         mode: 'dark'
-    }
+    },
+    components: {
+      MuiToolbar: {
+        styleOverrides: {
+          // Name of the slot
+          root: {
+            // Some CSS
+            height: "100%", 
+            width: "fit-content", 
+            zIndex: "1",
+            position: "fixed",
+            background: "#000000",
+            padding: "0px !important",
+            animation: "fadeInAnimation ease 3s",
+            animationIterationCount: "1",
+            animationFillMode: "forwards",
+            boxShadow: "0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%)",
+          },
+        },
+      },
+    },
 });
 
 export const App = () => {
@@ -27,7 +47,7 @@ export const App = () => {
         <CssBaseline />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<><Nav /> <Portfolio /> </>} />
+          <Route path="/portfolio" element={<><Nav /> <Projects /> </>} />
         </Routes>
       </ThemeProvider>
     </Router>

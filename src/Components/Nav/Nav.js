@@ -1,9 +1,10 @@
 import React from "react";
-import { AppBar, Toolbar, CssBaseline, useTheme, useMediaQuery } from "@mui/material"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-import './Styles/NavStyles.css';
+import { AppBar, Toolbar, useTheme, useMediaQuery } from "@mui/material"
+
 import { DrawerComponent } from "./Drawer";
+import './static/styles/stylesheet.css';
 
 
 export const Nav = () => {
@@ -12,24 +13,23 @@ export const Nav = () => {
 
     return (
         <AppBar position="static">
-            <CssBaseline />
             <Toolbar>
                 {isMobile ? (
                     <DrawerComponent />
                 ) : (
                     <div className="navContainer">
-                        <Link to="/" className="link">
+                        <NavLink to="/" className="link">
                             Home
-                        </Link>
-                        <Link to="/about" className="link">
+                        </NavLink>
+                        <NavLink to="/about" className="link">
                             About
-                        </Link>
-                        <Link to="/portfolio" className="link">
-                            Portfolio
-                        </Link>
-                        <Link to="/faq" className="link">
-                            Experience
-                        </Link>
+                        </NavLink>
+                        <NavLink to="/portfolio" className="link">
+                            Projects
+                        </NavLink>
+                        <NavLink to="/faq" className="link">
+                            Resum&eacute;
+                        </NavLink>
                     </div>
                 )}
             </Toolbar>
