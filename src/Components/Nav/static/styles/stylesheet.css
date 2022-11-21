@@ -61,14 +61,14 @@ html, body, #root, .MuiContainer-root {
 }
 
 @media only screen and (max-width: 1200px) { 
-    .MuiContainer-root {
+    .MuiContainer-root .animation {
         margin-top: 32px;
     }
 }
 
 @media only screen and (max-width : 900px) {
 
-    .MuiContainer-root {
+    .MuiContainer-root .animation{
         margin-top: 90px;
     }
 
