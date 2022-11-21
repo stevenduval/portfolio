@@ -8,7 +8,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 export const Projects = () => {
     return (
         <Container className="animation" sx={{ pl: {md: "137px"}, display: "flex", alignItems: "center" }} maxWidth="xl">
-          <Grid container spacing={4} sx={{ marginTop: "0 !important" }}>
+          <Grid container spacing={4} sx={{ marginTop: "32px !important" }}>
            {/* where you would put map to diff cards */}
               <Grid item key={1} xs={12} lg={6} sx={{paddingTop: "0 !important", pb: 4}}>
               <Card

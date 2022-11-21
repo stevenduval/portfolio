@@ -8,7 +8,7 @@ import { SocialIcons} from "./HomeSocialIcons";
 
 export const Home = () => {
     return (
-        <Box sx={{ display: "flex", height: "100%", alignItems: "center" }}>
+        <Box id="home" sx={{ display: "flex", height: "100%", alignItems: "center" }}>
             <Container maxWidth="sm" sx={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
                 <Headline />
                 <NavButtons />

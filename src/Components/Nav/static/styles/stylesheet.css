@@ -36,7 +36,7 @@
     width: 100%;
     height: fit-content !important;
     text-align: center;
-    background-image: none;
+    background-image: none !important;
     text-transform: uppercase;
 }
 
@@ -46,6 +46,7 @@
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    padding: 0 50px;
 }
 
 .MuiDrawer-paper ul li { 
@@ -80,8 +81,12 @@ html, body, #root, .MuiContainer-root {
         margin-left: 10px;
     }
 
-    html, body, #root, .MuiContainer-root {
-        height: calc(100% + 64px);
+   .MuiContainer-root {
+        height: auto;
+    }
+
+    #home > .MuiContainer-root {
+        height: 100%;
     }
 
     header {
