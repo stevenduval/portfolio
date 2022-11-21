@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
-import { Drawer, IconButton, Link, List, ListItem, ListItemText} from "@mui/material";
+import { Drawer, IconButton, List, ListItem, ListItemText} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
+
+import { Link } from "react-router-dom";
 
 import './static/styles/stylesheet.css';
 
@@ -29,12 +31,12 @@ export const DrawerComponent = () => {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/contact" className="link">Projects</Link>
+              <Link to="/projects" className="link">Projects</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about" className="link">Resum&eacute;</Link>
+              <Link to="/resume" className="link">Resum&eacute;</Link>
             </ListItemText>
           </ListItem>
         </List>

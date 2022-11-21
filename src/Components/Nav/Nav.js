@@ -24,10 +24,10 @@ export const Nav = () => {
                         <NavLink to="/about" className="link">
                             About
                         </NavLink>
-                        <NavLink to="/portfolio" className="link">
+                        <NavLink to="/projects" className="link">
                             Projects
                         </NavLink>
-                        <NavLink to="/faq" className="link">
+                        <NavLink to="/resume" className="link">
                             Resum&eacute;
                         </NavLink>
                     </div>

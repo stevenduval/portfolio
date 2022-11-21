@@ -2,6 +2,10 @@
    .MuiContainer-root h1 {
         font-size: 17vw;
     }
+
+    .MuiContainer-root .pAdjusted {
+        font-size: 3.6vw;
+    }
 }
 
 .MuiBox-root {
@@ -19,27 +23,32 @@
     min-width: 64px;
     width: 33%;
     text-align: center;
-    border-radius: 4px;
     position: relative;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.MuiContainer-root a.link + a.link::before {
-    content: '';
-    width: 2px;
-    height: 100%;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 0;
-    top: 0;
-    cursor: default;
+.MuiContainer-root a.link:nth-child(1) {
+    border-right: 2px solid #FFFFFF;
+}
+
+.MuiContainer-root a.link:nth-child(3) {
+    border-left: 2px solid #FFFFFF;
 }
 
 .MuiContainer-root a.link:hover {
    color: #b1ff06;
     cursor: pointer;
+}
+
+
+
+
+.MuiToolbar-root, .MuiContainer-root.animation { 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {

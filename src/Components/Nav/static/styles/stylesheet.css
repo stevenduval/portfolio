@@ -36,21 +36,44 @@
     width: 100%;
     height: fit-content !important;
     text-align: center;
+    background-image: none;
+    text-transform: uppercase;
 }
 
 .MuiDrawer-paper .link { 
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .MuiDrawer-paper ul li { 
    text-align: center;
 }
 
-@media only screen and (max-width : 600px) {
+
+@media only screen and (min-width : 1200px) {
+html, body, #root, .MuiContainer-root {
+    height: 100%;
+}
+
+}
+
+@media only screen and (max-width: 1200px) { 
+    .MuiContainer-root {
+        margin-top: 32px;
+    }
+}
+
+@media only screen and (max-width : 900px) {
+
+    .MuiContainer-root {
+        margin-top: 90px;
+    }
+
     header > div.MuiToolbar-root {
-        position: static;
+        position: fixed;
         height: 64px;
         width: 100%;
         box-shadow: none;

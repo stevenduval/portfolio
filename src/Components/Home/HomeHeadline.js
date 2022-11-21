@@ -7,7 +7,7 @@ export const Headline = () => {
             <Typography component="h1" variant="h1" align="center" sx={{ fontFamily: "'PT Sans Narrow', serif" }}>
                 STEVEN DUVAL
             </Typography>
-            <Typography align="center" variant="h6" color="text.secondary" paragraph sx={{ fontFamily: "'PT Sans Narrow', serif", textTransform: "uppercase"}}>
+            <Typography className="pAdjusted" align="center" variant="h6" color="text.secondary" paragraph sx={{ fontFamily: "'PT Sans Narrow', serif", textTransform: "uppercase"}}>
                 Front-End Developer based in the greater Chicagoland area
             </Typography>
         </>
