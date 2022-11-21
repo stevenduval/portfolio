@@ -16,7 +16,7 @@ export const DrawerComponent = () => {
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
         anchor="top"
-        transitionDuration={1000}
+        transitionDuration={{ enter: 1000, exit: 500 }}
       >
         <List>
           <ListItem onClick={() => setOpenDrawer(false)}>
