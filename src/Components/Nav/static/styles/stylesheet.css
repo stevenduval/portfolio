@@ -53,11 +53,8 @@
 }
 
 
-@media only screen and (min-width : 1200px) {
 html, body, #root, .MuiContainer-root {
     height: 100%;
-}
-
 }
 
 @media only screen and (max-width: 1200px) { 
@@ -81,5 +78,13 @@ html, body, #root, .MuiContainer-root {
 
     header > div.MuiToolbar-root  > button {
         margin-left: 10px;
+    }
+
+    html, body, #root, .MuiContainer-root {
+        height: calc(100% + 64px);
+    }
+
+    header {
+        height: 64px;
     }
 }
