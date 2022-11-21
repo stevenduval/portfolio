@@ -45,7 +45,7 @@
 
 
 
-.MuiToolbar-root, .MuiContainer-root.animation { 
+.MuiToolbar-root, .MuiContainer-root { 
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
