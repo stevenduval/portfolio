@@ -54,8 +54,12 @@
 }
 
 
-html, body, #root, .MuiContainer-root {
+html, body, #root {
     height: 100%;
+}
+
+.MuiContainer-root {
+    height: auto;
 }
 
 @media only screen and (max-width: 1200px) { 
@@ -79,10 +83,6 @@ html, body, #root, .MuiContainer-root {
 
     header > div.MuiToolbar-root  > button {
         margin-left: 10px;
-    }
-
-   .MuiContainer-root {
-        height: auto;
     }
 
     #home > .MuiContainer-root {
