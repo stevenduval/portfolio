@@ -9,7 +9,7 @@
 }
 
 .MuiBox-root {
-    background: rgba(0,0,84, 0.99);
+    background: rgba(0,0,100,1);
     background-image: url(../images/bg.gif);
     background-size: cover;
     background-blend-mode: multiply;
@@ -46,9 +46,8 @@
 
 
 .MuiToolbar-root, .MuiContainer-root { 
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: fadeIn ease 3s;
+    
 }
 
 @keyframes fadeInAnimation {
