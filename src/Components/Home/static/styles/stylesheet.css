@@ -9,7 +9,7 @@
 }
 
 .MuiBox-root {
-    background: rgba(0,0,100,1);
+    background: #000064;
     background-image: url(../images/bg.gif);
     background-size: cover;
     background-blend-mode: multiply;
