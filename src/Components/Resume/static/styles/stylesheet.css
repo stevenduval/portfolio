@@ -2,10 +2,6 @@
     letter-spacing: 0.5px;
 }
 
-/* .MuiContainer-root > .MuiAccordion-root:nth-child(1) {
-    margin-top: 32px !important;
-} */
-
 .MuiContainer-root > .MuiAccordion-root {
     margin-top: 16px !important;
 }
@@ -51,6 +47,10 @@
   @media only screen and (max-width: 899px) {
     .MuiContainer-root .MuiAvatar-root {
         margin-top: 32px;
+    }
+
+    .MuiAccordion-root:last-of-type {
+        margin-bottom: 32px !important;
     }
 
   }
