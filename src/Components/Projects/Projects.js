@@ -66,12 +66,12 @@ export const Projects = () => {
                     </Typography>
                   </CardContent>
                   <CardActions sx={{justifyContent: "center", pb: 2}}>
-            <Link href="https://spotify.stevenmduval.com" rel="noopener" target="_blank" title="Open in Browser">
+            <Link href="https://stevenmduval.com" rel="noopener" target="_blank" title="Open in Browser">
                 <Avatar sx={{ width: 25, height: 25 }} alt="Open in Browser" variant="rounded">
                     <LaunchIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>
             </Link>
-            <Link href="https://github.com/stevenduval/react-spotify-playlist-app" rel="noopener" target="_blank" title="View on GitHub">
+            <Link href="https://github.com/stevenduval/portfolio" rel="noopener" target="_blank" title="View on GitHub">
                 <Avatar sx={{ width: 25, height: 25 }} alt="GitHub" variant="rounded">
                     <GitHubIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>
