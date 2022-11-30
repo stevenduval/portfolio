@@ -8,7 +8,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 export const Projects = () => {
     return (
         <Container className="animation" sx={{ pl: {md: "137px"}, display: "flex", alignItems: "center" }} maxWidth="xl">
-          <Grid container spacing={4} sx={{ marginTop: "32px !important" }}>
+          <Grid container spacing={4}>
            {/* where you would put map to diff cards */}
               <Grid item key={1} xs={12} lg={6} sx={{paddingTop: "0 !important", pb: 4}}>
               <Card
@@ -32,12 +32,12 @@ export const Projects = () => {
                   </CardContent>
                   <CardActions sx={{justifyContent: "center", pb: 2}}>
             <Link href="https://spotify.stevenmduval.com" rel="noopener" target="_blank" title="Open in Browser">
-                <Avatar sx={{ backgroundColor: "#0077B5", width: 25, height: 25 }} alt="Open in Browser" variant="rounded">
+                <Avatar sx={{ width: 25, height: 25 }} alt="Open in Browser" variant="rounded">
                     <LaunchIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>
             </Link>
             <Link href="https://github.com/stevenduval/react-spotify-playlist-app" rel="noopener" target="_blank" title="View on GitHub">
-                <Avatar sx={{ backgroundColor: "#FFFFFF", width: 25, height: 25 }} alt="GitHub" variant="rounded">
+                <Avatar sx={{ width: 25, height: 25 }} alt="GitHub" variant="rounded">
                     <GitHubIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>
             </Link>
@@ -67,12 +67,12 @@ export const Projects = () => {
                   </CardContent>
                   <CardActions sx={{justifyContent: "center", pb: 2}}>
             <Link href="https://spotify.stevenmduval.com" rel="noopener" target="_blank" title="Open in Browser">
-                <Avatar sx={{ backgroundColor: "#0077B5", width: 25, height: 25 }} alt="Open in Browser" variant="rounded">
+                <Avatar sx={{ width: 25, height: 25 }} alt="Open in Browser" variant="rounded">
                     <LaunchIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>
             </Link>
             <Link href="https://github.com/stevenduval/react-spotify-playlist-app" rel="noopener" target="_blank" title="View on GitHub">
-                <Avatar sx={{ backgroundColor: "#FFFFFF", width: 25, height: 25 }} alt="GitHub" variant="rounded">
+                <Avatar sx={{ width: 25, height: 25 }} alt="GitHub" variant="rounded">
                     <GitHubIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>
             </Link>
