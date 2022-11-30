@@ -59,7 +59,7 @@ export const Projects = () => {
                       Portfolio
                     </Typography>
                     <Typography variant="body2" sx={{width: "80%", margin: "0 auto", pb:1 }}>
-                      This project is a custom built single page application.  I built this gain more knowledge in the tech listed below and to showcase my abilities and projects.
+                      This project is a custom built single page application.  I built this to gain more knowledge in the tech listed below and to showcase my abilities and projects.
                     </Typography>
                     <Typography variant="caption">
                     Technologies: React, React Router, MUI (Material UI)
