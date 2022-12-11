@@ -26,11 +26,6 @@ export const DrawerComponent = () => {
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about" className="link">About</Link>
-            </ListItemText>
-          </ListItem>
-          <ListItem onClick={() => setOpenDrawer(false)}>
-            <ListItemText>
               <Link to="/projects" className="link">Projects</Link>
             </ListItemText>
           </ListItem>

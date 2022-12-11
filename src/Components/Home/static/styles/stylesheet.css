@@ -27,6 +27,7 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    margin-left: 0px;
 }
 
 .MuiContainer-root a.link:nth-child(1) {

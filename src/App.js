@@ -46,7 +46,6 @@ export const App = () => {
         <CssBaseline />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<><Nav /> <About /> </>} />
           <Route path="/projects" element={<><Nav /> <Projects /> </>} />
           <Route path="/resume" element={<><Nav /> <Resume /> </>} />
         </Routes>
