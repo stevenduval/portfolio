@@ -12,7 +12,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Nav } from "./Components/Nav/Nav";
 import { Home } from './Components/Home/Home';
-import { About } from "./Components/About/About";
+// import { About } from "./Components/About/About";
 import { Projects } from "./Components/Projects/Projects";
 import { Resume } from "./Components/Resume/Resume";
 
