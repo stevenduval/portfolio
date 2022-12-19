@@ -1,6 +1,7 @@
 import { Avatar, Container, Card, CardActions, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
 import SpotifyMockup from './static/images/spotify-playlist-maker-mockup.png';
 import PortfolioMockup from './static/images/portfolio-mockup.png';
+import RedditMockup from './static/images/reddit-mockup.png'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -24,7 +25,7 @@ export const Projects = () => {
                       Spotify Playlist Maker
                     </Typography>
                     <Typography variant="body2" sx={{width: "80%", margin: "0 auto", pb:1 }}>
-                      This project utilizies the Spotify API, which allows users to search for songs and create a playlist that can then be saved in their Spotify account.
+                      This project utilizes the Spotify API, which allows users to search for songs and create a playlist that can then be saved in their Spotify account.
                     </Typography>
                     <Typography variant="caption">
                     Technologies: React, CSS
@@ -72,6 +73,40 @@ export const Projects = () => {
                 </Avatar>
             </Link>
             <Link href="https://github.com/stevenduval/portfolio" rel="noopener" target="_blank" title="View on GitHub">
+                <Avatar sx={{ width: 25, height: 25 }} alt="GitHub" variant="rounded">
+                    <GitHubIcon sx={{ width: 20, height: 20 }}/>
+                </Avatar>
+            </Link>
+                  </CardActions>
+                </Card>
+          </Grid>
+          <Grid item key={2} xs={12} lg={6} sx={{paddingTop: "0 !important", pb: 4}}>
+            <Card
+                  sx={{ height: "100%", display: "flex", flexDirection: "column", textAlign: "center", backgroundImage: "none", boxShadow: "none" }}
+                >
+                  <CardMedia
+                    component="img"
+                    image={RedditMockup}
+                    alt="Reddit Mockup"
+                  />
+                  <CardContent sx={{ flexGrow: 1, pb: 1}}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Reddit App
+                    </Typography>
+                    <Typography variant="body2" sx={{width: "80%", margin: "0 auto", pb:1 }}>
+                    This project utilizes the Reddit JSON API, which allows users to view posts at a high level as well as individually by clicking on the post to view comments.
+                    </Typography>
+                    <Typography variant="caption">
+                    Technologies: React, React Router, Redux, MUI (Material UI)
+                    </Typography>
+                  </CardContent>
+                  <CardActions sx={{justifyContent: "center", pb: 2}}>
+            <Link href="https://reddit.stevenmduval.com" rel="noopener" target="_blank" title="Open in Browser">
+                <Avatar sx={{ width: 25, height: 25 }} alt="Open in Browser" variant="rounded">
+                    <LaunchIcon sx={{ width: 20, height: 20 }}/>
+                </Avatar>
+            </Link>
+            <Link href="https://github.com/stevenduval/react_redux_reddit_app" rel="noopener" target="_blank" title="View on GitHub">
                 <Avatar sx={{ width: 25, height: 25 }} alt="GitHub" variant="rounded">
                     <GitHubIcon sx={{ width: 20, height: 20 }}/>
                 </Avatar>

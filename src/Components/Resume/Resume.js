@@ -20,7 +20,7 @@ export const Resume = () => {
     const handleChange = (panel) => (event, isExpanded) => setExpanded(isExpanded ? panel : false);
 
     return (
-        <Container className="animation" sx={{ pl: { md: "137px" }, display: "flex", justifyContent: "center", flexDirection: "column" }} maxWidth="lg">
+        <Container className="animation" sx={{ pl: { md: "137px" }, display: "flex", justifyContent: "center", flexDirection: "column", mt: 0 }} maxWidth="lg">
             <Stack direction="row" justifyContent="center">
             <Link href={ResumePDF} rel="noopener" target="_blank" title="Resume" sx={{textDecoration: 'none'}}>
                 <Avatar sx={{ backgroundColor: "#FFFFFF", width: '120px', borderRadius: '2px', fontSize: '13px', fontWeight: 'bold' }} alt="Resume">

@@ -65,6 +65,14 @@ html, body, #root, .MuiContainer-root {
         flex-direction: unset !important;
     }
 
+    .MuiGrid-container {
+        justify-content: center;
+    }
+
+    .MuiContainer-root {
+        flex-direction: column;
+        margin-top: 64px;
+    }
 
 }
 
