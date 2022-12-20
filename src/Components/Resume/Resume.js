@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 
 import { Accordion, AccordionSummary, AccordionDetails, Container, Typography } from "@mui/material"
 
@@ -15,7 +15,8 @@ import './static/styles/stylesheet.css';
 import PDFIcon from '@mui/icons-material/PictureAsPdfOutlined';
 
 export const Resume = () => {
-    const [expanded, setExpanded] = React.useState('panel1');
+
+    const [expanded, setExpanded] = useState('panel1');
 
     const handleChange = (panel) => (event, isExpanded) => setExpanded(isExpanded ? panel : false);
 

@@ -1,15 +1,17 @@
+import { Typography } from '@mui/material';
 
-import {Typography } from "@mui/material";
 
 export const Headline = () => {
+
     return (
         <>
-            <Typography component="h1" variant="h1" align="center" sx={{ fontFamily: "'PT Sans Narrow', serif" }}>
+            <Typography component='h1' variant='h1'>
                 STEVEN DUVAL
             </Typography>
-            <Typography className="pAdjusted" align="center" variant="h6" color="text.secondary" paragraph sx={{ fontFamily: "'PT Sans Narrow', serif", textTransform: "uppercase"}}>
+            <Typography component='p' variant='h6' color='text.secondary'>
                 Front-End Developer based in the greater Chicagoland area
             </Typography>
         </>
     );
+    
 }

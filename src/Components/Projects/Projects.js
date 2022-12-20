@@ -80,7 +80,7 @@ export const Projects = () => {
                   </CardActions>
                 </Card>
           </Grid>
-          <Grid item key={2} xs={12} lg={6} sx={{paddingTop: "0 !important", pb: 4}}>
+          <Grid item key={3} xs={12} lg={6} sx={{paddingTop: "0 !important", pb: 4}}>
             <Card
                   sx={{ height: "100%", display: "flex", flexDirection: "column", textAlign: "center", backgroundImage: "none", boxShadow: "none" }}
                 >
