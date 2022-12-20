@@ -5,10 +5,18 @@ import { Stack } from '@mui/material';
 
 export const NavButtons = () => {
 
+    const data = [
+        { href: '/projects', linkName: 'Projects' },
+        { href: '/resume', linkName: 'Resumé' }
+    ];
+
     return (
-        <Stack maxWidth='sm' direction='row' justifyContent='center' sx={{ mb: 3, width: '100%', alignSelf: 'center' }}>
-            <Link to='/projects' className='link'>Projects</Link>
-            <Link to='/resume' className='link'>Resum&eacute;</Link>
+        <Stack className='linkContainer' maxWidth='sm'>
+            {data.map((item, index) => (
+                <Link key={index} to={item.href} className='link'>
+                    {item.linkName}
+                </Link>
+            ))}
         </Stack>
     );
 

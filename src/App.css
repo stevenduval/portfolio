@@ -4,203 +4,274 @@ html,
 body,
 #root,
 .MuiContainer-root {
-  height: 100%;
+	height: 100%;
 }
 
 .MuiToolbar-root,
 .MuiContainer-root {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
+}
+
+/* nav component */
+
+.navContainer > .link {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 1rem;
+	height: 64px;
+	line-height: 64px;
+	position: relative;
+	text-align: left;
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding: 0 24px;
+	display: block;
+	border-bottom: 2px solid #181717;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.navContainer > .link.active {
+	background: #121212;
+	box-shadow: 4px 0px 0px 0px #121212;
+}
+
+.navContainer:nth-child(1) {
+	border-top: 2px solid #181717;
+}
+
+.navContainer > .link:hover {
+	cursor: pointer;
+	background: #FFF;
+	color: #000;
+}
+
+.MuiToolbar-root {
+	height: 100%;
+	width: 113px;
+	z-index: 1;
+	position: fixed !important;
+	background: #000000;
+	padding: 0px !important;
+	box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.MuiDrawer-paper {
+	top: 56px !important;
+	width: 100%;
+	height: fit-content !important;
+	text-align: center;
+	background-image: none !important;
+	text-transform: uppercase;
+}
+
+.MuiDrawer-paper .link {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: 0 50px;
+}
+
+.MuiDrawer-paper ul li {
+	text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.MuiGrid-root {
+		margin-top: 0 !important;
+		flex-direction: unset !important;
+	}
+
+	.MuiGrid-container {
+		justify-content: center;
+	}
+
+	.MuiContainer-root {
+		flex-direction: column;
+		margin-top: 64px;
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+	.MuiContainer-root {
+		align-items: unset !important;
+	}
+
+	.MuiContainer-root > .MuiGrid-root:nth-child(1) {
+		margin-top: 32px !important;
+	}
+
+	.MuiGrid-root {
+		flex-direction: unset !important;
+		align-items: center;
+	}
+
+}
+
+@media only screen and (max-width : 899px) {
+
+	.MuiContainer-root {
+		height: auto;
+	}
+
+	.MuiContainer-root .animation {
+		margin-top: 90px;
+	}
+
+	header > div.MuiToolbar-root {
+		position: fixed;
+		height: 64px;
+		width: 100%;
+		box-shadow: none;
+	}
+
+	header > div.MuiToolbar-root > button {
+		margin-left: 10px;
+	}
+
+	#home {
+		height: 100%;
+	}
+
+	header {
+		height: 64px;
+	}
 }
 
 /* home component*/
 
 #home {
-  background: #000064;
-  background-image: url(./Components/Home/static/images/bg.gif);
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-position: top;
-  max-width: 100%;
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-transform: uppercase;
+	background: #000064;
+	background-image: url(../public/images/bg.gif);
+	background-size: cover;
+	background-blend-mode: multiply;
+	background-position: top;
+	max-width: 100%;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: uppercase;
 }
 
 #home,
 #home h1,
 #home p,
 #home a {
-  font-family: 'PT Sans Narrow', serif;
-  text-align: center;
+	font-family: 'PT Sans Narrow', serif;
+	text-align: center;
 }
 
 #home p {
-  margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
+#home .linkContainer {
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 24px;
+	width: 100%;
+	align-self: center;
+}
 
 #home a.link {
-  color: #FFFFFF;
-  text-decoration: none;
-  min-width: 64px;
-  width: 33%;
-  text-align: center;
-  position: relative;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-left: 0px;
+	color: #FFFFFF;
+	text-decoration: none;
+	min-width: 64px;
+	width: 33%;
+	text-align: center;
+	position: relative;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-left: 0px;
 }
 
 #home a.link:nth-child(1) {
-  border-right: 2px solid #FFFFFF;
+	border-right: 2px solid #FFFFFF;
 }
 
 #home a.link:hover {
-  color: #b1ff06;
-  cursor: pointer;
+	color: #b1ff06;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
-  #home h1 {
-    font-size: 17vw;
-  }
+	#home h1 {
+		font-size: 17vw;
+	}
 
-  #home p {
-    font-size: 3.6vw;
-  }
+	#home p {
+		font-size: 3.6vw;
+	}
 }
 
-/* nav component */
+/* projects component */
 
-.navContainer>.link {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 1rem;
-  height: 64px;
-  line-height: 64px;
-  position: relative;
-  text-align: left;
-  font-family: 'PT Sans Narrow', sans-serif;
-  padding: 0 24px;
-  display: block;
-  border-bottom: 2px solid #181717;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
+#projects {
+	display: flex;
+	align-items: center;
 }
 
-.navContainer>.link.active {
-  background: #121212;
-  box-shadow: 4px 0px 0px 0px #121212;
+#projects .MuiGrid-item {
+	padding-top: 0 !important;
+	padding-bottom: 32px;
 }
 
-.navContainer:nth-child(1) {
-  border-top: 2px solid #181717;
+#projects .MuiCard-root {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: unset;
+	box-shadow: unset;
 }
 
-.navContainer>.link:hover {
-  cursor: pointer;
-  background: #FFF;
-  color: #000;
+#projects .MuiCardContent-root p {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 8px;
 }
 
-.MuiDrawer-paper {
-  top: 56px !important;
-  width: 100%;
-  height: fit-content !important;
-  text-align: center;
-  background-image: none !important;
-  text-transform: uppercase;
+#projects .MuiCardContent-root {
+	flex-grow: 1;
+	padding-bottom: 8px;
 }
 
-.MuiDrawer-paper .link {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 0 50px;
+#projects .MuiCardActions-root {
+	justify-content: center;
+	padding-bottom: 16px;
 }
 
-.MuiDrawer-paper ul li {
-  text-align: center;
+#projects .MuiCardActions-root .MuiAvatar-root {
+	height: 25px;
+	width: 25px;
 }
 
-@media only screen and (min-width: 1200px) {
-
-  .MuiGrid-root {
-    margin-top: 0 !important;
-    flex-direction: unset !important;
-  }
-
-  .MuiGrid-container {
-    justify-content: center;
-  }
-
-  .MuiContainer-root {
-    flex-direction: column;
-    margin-top: 64px;
-  }
-
+#projects .MuiCardActions-root .MuiAvatar-root .MuiSvgIcon-root {
+	height: 20px;
+	width: 20px;
 }
 
-@media only screen and (max-width: 1199px) {
 
-  .MuiContainer-root {
-    align-items: unset !important;
-  }
-
-  .MuiContainer-root>.MuiGrid-root:nth-child(1) {
-    margin-top: 32px !important;
-  }
-
-  .MuiGrid-root {
-    flex-direction: unset !important;
-    align-items: center;
-  }
-
-}
-
-@media only screen and (max-width : 899px) {
-
-  .MuiContainer-root {
-    height: auto;
-  }
-
-  .MuiContainer-root .animation {
-    margin-top: 90px;
-  }
-
-  header>div.MuiToolbar-root {
-    position: fixed;
-    height: 64px;
-    width: 100%;
-    box-shadow: none;
-  }
-
-  header>div.MuiToolbar-root>button {
-    margin-left: 10px;
-  }
-
-  #home {
-    height: 100%;
-  }
-
-  header {
-    height: 64px;
-  }
+@media only screen and (min-width: 900px) {
+	#projects {
+		padding-left: 137px;
+	}
 }

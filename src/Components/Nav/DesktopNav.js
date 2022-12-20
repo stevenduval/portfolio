@@ -1,20 +1,22 @@
 import { NavLink } from 'react-router-dom';
-
+import { Stack } from '@mui/system';
 
 export const DesktopNav = () => {
 
+    const data = [
+        { href: '/', linkName: 'Home' },
+        { href: '/projects', linkName: 'Projects' },
+        { href: '/resume', linkName: 'Resumé' }
+    ];
+
     return (
-        <div className='navContainer'>
-            <NavLink to='/' className='link'>
-                Home
-            </NavLink>
-            <NavLink to='/projects' className='link'>
-                Projects
-            </NavLink>
-            <NavLink to='/resume' className='link'>
-                Resum&eacute;
-            </NavLink>
-        </div>
+        <Stack className='navContainer'>
+            {data.map((item, index) => (
+                <NavLink key={index} to={item.href} className='link'>
+                    {item.linkName}
+                </NavLink>
+            ))}
+        </Stack>
     );
 
 }

@@ -5,7 +5,7 @@ export const Headline = () => {
 
     return (
         <>
-            <Typography component='h1' variant='h1'>
+            <Typography variant='h1'>
                 STEVEN DUVAL
             </Typography>
             <Typography component='p' variant='h6' color='text.secondary'>
