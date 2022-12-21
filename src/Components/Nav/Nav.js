@@ -1,6 +1,5 @@
 import { MobileNav } from './MobileNav';
 import { DesktopNav } from './DesktopNav';
-
 import { AppBar, Toolbar, useTheme, useMediaQuery } from '@mui/material'
 
 
@@ -11,7 +10,7 @@ export const Nav = () => {
 
     return (
         <AppBar position='static'>
-            <Toolbar>
+            <Toolbar className='animate'>
                 {isMobile ? (
                     <MobileNav />
                 ) : (

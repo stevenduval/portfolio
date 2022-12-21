@@ -1,7 +1,6 @@
 import { ProjectMedia } from './ProjectMedia';
 import { ProjectContent } from './ProjectContent';
 import { ProjectActions } from './ProjectActions';
-
 import { Container, Card, Grid } from '@mui/material';
 
 
@@ -17,7 +16,7 @@ export const Projects = () => {
         <Container id='projects' maxWidth='xl'>
             <Grid container spacing={4}>
                 {data.map((item, index) => (
-                    <Grid item key={index} xs={12} lg={6}>
+                    <Grid className='animate' item key={index} xs={12} lg={6}>
                         <Card>
                             <ProjectMedia data={item} />
                             <ProjectContent data={item} />
@@ -28,4 +27,5 @@ export const Projects = () => {
             </Grid>
         </Container>
     );
+
 }

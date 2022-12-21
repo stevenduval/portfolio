@@ -1,5 +1,4 @@
 import { AccordionSummary, Typography } from '@mui/material';
-
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 
 
@@ -18,4 +17,5 @@ export const ResumeSummary = (props) => {
             </Typography>
         </AccordionSummary>
     );
+    
 }

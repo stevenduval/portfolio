@@ -1,5 +1,6 @@
 import { CardContent, Typography } from '@mui/material';
 
+
 export const ProjectContent = (props) => {
 
     const { data } = props;
@@ -17,4 +18,5 @@ export const ProjectContent = (props) => {
             </Typography>
         </CardContent>
     );
+
 }

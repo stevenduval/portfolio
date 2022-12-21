@@ -1,5 +1,6 @@
 import { CardMedia } from '@mui/material';
 
+
 export const ProjectMedia = (props) => {
 
     const { data } = props;
@@ -7,4 +8,5 @@ export const ProjectMedia = (props) => {
     return (
         <CardMedia component='img' image={data.mockupImg} alt={`${data.title} Mockup`} />
     );
+
 }

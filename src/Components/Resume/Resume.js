@@ -1,9 +1,7 @@
 import { useState } from 'react';
-
 import { ResumeView } from './ResumeView';
 import { ResumeSummary } from './ResumeSummary';
 import { ResumeDetails } from './ResumeDetails';
-
 import { Accordion, Container } from '@mui/material'
 
 
@@ -25,11 +23,12 @@ export const Resume = () => {
         <Container id='resume' maxWidth='lg'>
             <ResumeView />
             {data.map((item, index) => (
-                <Accordion key={index} expanded={expanded === `panel${index + 1}`} onChange={handleChange(`panel${index + 1}`)}>
+                <Accordion className='animate' key={index} expanded={expanded === `panel${index + 1}`} onChange={handleChange(`panel${index + 1}`)}>
                     <ResumeSummary data={item} index={index} />
                     <ResumeDetails data={item} />
                 </Accordion>
             ))}
         </Container>
     );
+
 }

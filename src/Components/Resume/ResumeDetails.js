@@ -1,5 +1,6 @@
 import { AccordionDetails, Typography } from '@mui/material';
 
+
 export const ResumeDetails = (props) => {
 
     const { data } = props;
@@ -19,4 +20,5 @@ export const ResumeDetails = (props) => {
             </Typography>
         </AccordionDetails>
     );
+
 }

@@ -1,7 +1,7 @@
 import { Avatar, CardActions, Link as MuiLink } from '@mui/material';
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+
 
 export const ProjectActions = (props) => {
 
@@ -21,4 +21,5 @@ export const ProjectActions = (props) => {
             </MuiLink>
         </CardActions>
     );
+
 }

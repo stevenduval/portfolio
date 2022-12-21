@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { Drawer, IconButton, List, ListItem } from '@mui/material';
-
 import MenuIcon from '@mui/icons-material/Menu';
 
 
@@ -34,4 +32,5 @@ export const MobileNav = () => {
             </Drawer>
         </>
     );
+    
 }
