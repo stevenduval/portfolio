@@ -13,7 +13,7 @@ export const ProjectContent = (props) => {
                 {data.description}
             </Typography>
             <Typography variant='caption'>
-                {`Technologies: ${data.tech}`}
+                Technologies: {data.tech}
             </Typography>
         </CardContent>
     );
