@@ -1,11 +1,12 @@
 # My Portfolio site
 
+
 ## Getting Started
 Utilizing React, React Router and MUI, this project is the home to my Resumé as well as a few projects I have built to further my knowledge.
 
 In the terminal, use 'npm start' to initialize the app
 
-### Installing
+## Installing
 This project does utilize React, React Router and MUI, so you will need to ensure these are installed on your machine (links are below).  Once you have the above installed you will need to install the project dependencies that are referenced in the package.json file.
 
 ## Deployment
