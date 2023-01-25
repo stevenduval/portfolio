@@ -7,7 +7,7 @@ export const DesktopNav = () => {
     const data = [
         { href: '/', linkName: 'Home' },
         { href: '/projects', linkName: 'Projects' },
-        { href: '/resume', linkName: 'Resumé' }
+        { href: '/resume', linkName: 'Résumé' }
     ];
 
     return (

@@ -6,7 +6,7 @@ export const NavButtons = () => {
 
     const data = [
         { href: '/projects', linkName: 'Projects' },
-        { href: '/resume', linkName: 'Resumé' }
+        { href: '/resume', linkName: 'Résumé' }
     ];
 
     return (
