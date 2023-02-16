@@ -227,7 +227,11 @@ body,
 }
 
 #home .socialIcons .MuiAvatar-root:hover {
-	opacity: 0.5;
+	opacity: 0.7;
+}
+
+#home .socialIcons .MuiTypography-root:nth-child(2) .MuiAvatar-root:hover {
+	background-color: #0077B5;
 }
 
 @media only screen and (max-width: 600px) {

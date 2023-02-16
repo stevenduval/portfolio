@@ -7,7 +7,7 @@ export const SocialIcons = () => {
 
     const data = [
         { href: 'https://github.com/stevenduval', title: 'GitHub', bgColor: '#FFFFFF', icon: <GitHubIcon /> },
-        { href: 'https://linkedin.com/in/stevenduval', title: 'LinkedIn', bgColor: '#0077B5', icon: <LinkedInIcon /> }
+        { href: 'https://linkedin.com/in/stevenduval', title: 'LinkedIn', bgColor: '#FFFFFF', icon: <LinkedInIcon /> }
     ];
 
     return (
