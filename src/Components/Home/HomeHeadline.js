@@ -9,7 +9,7 @@ export const Headline = () => {
                 STEVEN DUVAL
             </Typography>
             <Typography component='p' variant='h6' color='text.secondary'>
-                Front-End Developer based in the greater Chicagoland area
+                Front-End Developer based in the Miami-Fort Lauderdale Area
             </Typography>
         </>
     );
